@@ -1,0 +1,74 @@
+ÚÇדב דזÞÚ ÇÎÈÇÑל זÚÇדב Çבcarousel 
+ÈÇב vue 
+Çבדוד Çהל ÈÈÚÊ Çבdata
+זÇבÏÇÊÇ ÌÇםו דה ÚÏÏ 2 func 
+זÇÍÏו בבÎÈÑ ÈדÇ םÍÊזםו דה 
+id , title , hashtag
+זÇבÊÇהםו בב func 
+ÈÊÇÚÊ ÇבÕזÑו דÚ ÇבÚבד 
+Çה ÇבÕזÑו דÔ דÍÝזÙו Ýל table 
+Çב news 
+ÇהÇ ÔÛÇב laravel spatiemedia 
+זול ÈÊÍÝÙ ÇבÕזÑו Èid 
+זÈÊÈÏÃ ÊÑÌÚוÇ ÈÝÇה‗םÔה 
+Çבבל וז ‗Ïו דËבÇ 
+{{$posts->getFirstMediaUrl('images', 'thumb')}}
+ÇהÇ ÈÈÚÊ ÇבÏÇÊÇ זÈÊÑזÍ ÚÇÏל ÈÓ ÇבÕזÑו ÈÊÑזÍ null 
+זÚדבÊ dd 
+Ìזו Çב view 
+ÈÊÑÌÚ null
+
+ÈÑÖו ÑÛד ÇהוÇ ÙÇוÑו זÇבÏהםÇ ÊדÇד 
+
+ÏבזÞÊל ÇבדÔ‗בו Ýל 3 ÍÌÇÊ
+ÇÓÊÞÈב Çב 2 ÏזÇב Ïזב ÇÒÇל Ýל Çבprops 
+ÇהÇ דÓÊÞÈבוד ‗Ïו 
+   props:{
+          entity_image:{
+                 required: true,
+                 default: () => []
+        },
+                default_news:{
+                 required: true,
+                 default: () => {}
+        },},
+
+זÈÇÚÊוד ‗Ïו 
+
+ <example-component
+                          default_news = "{{$posts->post()}}"
+    {{-- /*this func getFirstMediaUrl() related with spatiemedialibrary --}}
+                    entity_image = "{{$posts->getFirstMediaUrl('images', 'thumb')}}"
+                    />
+
+Çבdefault_news
+ÈÊÑÌÚ ÏÇÊÇ ÚÇÏל זÇבÏהםÇ ÊדÇד ב‗ה Çבimage בÇ
+
+ÇבדÔ‗בו ÇבÊÇהםו בז ÚדבÊ loop 
+Úבל ÇבÏÇÊÇ וÚדבוÇ ÇÒÇל 
+ÚבÔÇה םÙוÑזÇ דהÝÕבםה Ýל Çב carousel
+Ïו ÑםÈז בדÚÙד ÇבדבÝÇÊ Çבבל ÝםוÇ ÇבדזÖזÚ Ïו ‗בו 
+___
+|
+|
+|
+|__model news
+|
+|__component / app js
+|
+|
+|
+|_ view component
+|
+|
+|
+|_ controller
+|
+|
+|_ news table
+|
+|
+|_
+|
+|
+|_
